@@ -1,4 +1,4 @@
-tuw\_multi\_robot test
+tuw\_multi\_robot
 ===
 
 <img src="tuw_multi_robot/res/maze_stage.png" alt="200 Robots in stage" width="400px" />
