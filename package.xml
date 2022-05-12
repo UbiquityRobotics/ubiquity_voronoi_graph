@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>ubiquity_voronoi_graph</name>
+  <version>0.0.0</version>
+  <description>Generates a voronoi graph out of a map. Provides the plugin needed for viewing in rviz</description>
+
+  <!-- messages maintainers -->
+  <maintainer email="benjamin.binder@tuwien.ac.at">Benjamin Binder</maintainer>
+  <maintainer email="markus.bader@tuwien.ac.at">Markus Bader</maintainer>
+  <!-- voronoi graph node maintainers -->
+  <maintainer email="benjamin.binder@tuwien.ac.at">Benjamin Binder</maintainer>
+  <maintainer email="markus.bader@tuwien.ac.at">Markus Bader</maintainer>
+  <maintainer email="florian.beck@tuwien.ac.at">Florian Beck</maintainer>
+  <!-- rviz plugin maintainers -->
+  <maintainer email="benjamin.binder@tuwien.ac.at">Benjamin Binder</maintainer>
+  <maintainer email="markus.bader@tuwien.ac.at">Markus Bader</maintainer>
+  <maintainer email="florian.beck@tuwien.ac.at">Florian Beck</maintainer>
+
+
+  <license>BSD</license>
+
+  <!-- authors of messages -->
+  <author email="benjamin.binder@tuwien.ac.at">Benjamin Binder</author>
+  <author email="eugen.kaltengger@gmail.com">Eugen Kaltenegger</author>
+  <!-- author of the voronoi graph node -->
+  <author email="benjamin.binder@tuwien.ac.at">Benjamin Binder</author>
+  <!-- author of rviz plugin -->
+  <author email="benjamin.binder@tuwien.ac.at">Benjamin Binder</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>message_generation</build_depend>
+  <build_depend>qtbase5-dev</build_depend>
+
+  <depend>roscpp</depend>
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>tf</depend>
+  <depend>cv_bridge</depend>
+  <depend>libdxflib</depend>
+  <depend>dynamic_reconfigure</depend>
+  <depend>rviz</depend>
+  <depend>boost</depend>
+
+  <build_export_depend>message_runtime</build_export_depend>
+  <exec_depend>message_runtime</exec_depend>
+
+  <!-- rviz plugin -->
+  <export>
+    <rviz plugin="${prefix}/plugin_description.xml"/>
+  </export>
+</package>

@@ -2,6 +2,9 @@ cache/
 .vscode
 .idea
 
+#vscode
+.vscode
+
 # Backups
 *swap
 *~
@@ -37,14 +40,6 @@ cache/
 *.out
 *.app
 
-# CMake
-CMakeCache.txt
-CMakeFiles
-Makefile
-cmake_install.cmake
-install_manifest.txt
-build
-
 # Eclipse
 .project
 .pydevproject
@@ -55,9 +50,3 @@ build
 
 # KDevelop
 *kdev*
-
-# ROS
-build
-devel
-.catkin_workspace
-./src/CMakeLists.txt
