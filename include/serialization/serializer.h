@@ -67,7 +67,7 @@ namespace tuw_graph
                 using boost::serialization::make_nvp;
                 ar & boost::serialization::make_nvp("Origin", Origin);
                 ar & boost::serialization::make_nvp("Resolution", Resolution);
-                ar & boost::serialization::make_nvp("SegmentLength", SegmentLength);
+                ar & boost::serialization::make_nvp("NumberOfSegments", SegmentLength);
             }
     };
 
