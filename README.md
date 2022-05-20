@@ -7,15 +7,12 @@
 This package generates a voronoi graph out of a map.  
 Provides the messages for transporting the graph between nodes and the rviz plugin needed for visualization.
 
-<br>
-
 ## voronoi\_graph\_node
 Receives a pixel map ([occupancy\_grid](http://docs.ros.org/api/nav_msgs/html/msg/OccupancyGrid.html)) and converts it into a voronoi graph describing the original map.
 
 For each graph a hash number is generated based on the map name.
 Each graph is saved in 3 separated files in cfg/graph/name_of_map/generated_hash_number: [graphData.xml](#graphdataxml-contains-the-voronoi-graph-edges-data), [graphInfo.xml](#graphinfoxml-contains-the-voronoi-graph-meta-data) and [treeInfo.xml](#treeinfoxml). These files can be used to load the graph instead of generating one. Right now this function is not available - see [TODO](#todo)
   
-<br>
 
 ### Subscribed Topics
 
@@ -61,7 +58,6 @@ Each graph is saved in 3 separated files in cfg/graph/name_of_map/generated_hash
 
      If this param is set a custom generated graph is loded from this path
 
-<br>
 
 ## graphData.xml (contains the voronoi graph edges data)  
 ```xml
@@ -133,7 +129,6 @@ Each graph is saved in 3 separated files in cfg/graph/name_of_map/generated_hash
 ## ubiquity\_voronoi\_rviz
 Presents rviz plugins for visualizing generated graphs. 
 
-<br>
 
 ## TODO
 - error when trying to read already generated map from file
