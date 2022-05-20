@@ -11,7 +11,7 @@ Provides the messages for transporting the graph between nodes and the rviz plug
 Receives a pixel map ([occupancy\_grid](http://docs.ros.org/api/nav_msgs/html/msg/OccupancyGrid.html)) and converts it into a voronoi graph describing the original map.
 
 For each graph a hash number is generated based on the map name.
-Each graph is saved in 3 separated files in cfg/graph/name_of_map/generated_hash_number: [graphData.xml](#graphdataxml-contains-the-voronoi-graph-edges-data), [graphInfo.xml](#graphinfoxml-contains-the-voronoi-graph-meta-data) and [treeInfo.xml](#treeinfoxml). These files can be used to load the graph instead of generating one. Right now this function is not available - see [TODO](#todo)
+Each graph is saved in 3 separated files ([graphData.xml](#graphdataxml-contains-the-voronoi-graph-edges-data), [graphInfo.xml](#graphinfoxml-contains-the-voronoi-graph-meta-data) and [treeInfo.xml](#treeinfoxml).) in *cfg/graph/name_of_map/generated_hash_number*. These files can be used to load the graph instead of generating one. Right now this function is not available - see [TODO](#todo)
   
 
 ### Subscribed Topics
@@ -88,7 +88,7 @@ Each graph is saved in 3 separated files in cfg/graph/name_of_map/generated_hash
 - `<minDistance>` = 
 - `<pointLength>` = num of points that describe the edge  
 - `<item>num</item>` = ids of predecessors and successors using the num of predecessors as a split point  
-- `<item><x><y></item>`the coordinates of points describing the edge  
+- `<item><x><y></item>` = the coordinates of points describing the edge  
   
 ## graphInfo.xml (contains the voronoi graph meta data)
 ```xml
